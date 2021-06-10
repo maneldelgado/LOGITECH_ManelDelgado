@@ -32,16 +32,20 @@ input[type=text] {
 }
 
 #language {
-    font-family: var(--raleway);
-    font-weight: var(--bold);
-    font-size: var(--button);
-    color: var(--white);
     background-color: transparent;
     border: 0px;
 }
 
+#language, #language option {
+    font-family: var(--raleway);
+    font-weight: var(--bold);
+    font-size: var(--button);
+    color: var(--white);
+    background-color: var(--grey);
+}
+
 #language option {
-    color: var(--grey);
+    color: var(--white);
 }
 
 .search-icon {

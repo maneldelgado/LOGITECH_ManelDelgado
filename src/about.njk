@@ -2,5 +2,71 @@
 layout: layouts/base.njk
 title: Sobre nosotros
 ---
+<script>
+    document.getElementById("about").style.color = "#d7ff82"
+</script>
 
-<h1>Sobre nosotros</h1>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+
+<div class="about-wrapper">
+  <div class="info-wrapper">
+    <div class="left-wrapper">
+      <div class="left-texts">
+        <h1 class="left-title">Sobre nosotros</h1>
+        <p class="specs-description">
+        Empresa suiza centrada en la innovación y la calidad, Logitech diseña productos y experiencias que ocupan un lugar cotidiano en la vida de las personas.
+        Fundada en 1981 en Lausana, Suiza, y en rápida expansión a Silicon Valley, Logitech comenzó a conectar a la gente a través de periféricos de ordenador innovadores y
+        de muchas primicias de la industria, como el ratón inalámbrico con tecnología de infrarrojos, el trackball para usar con el pulgar, el ratón láser y mucho más.
+        Desde esos primeros días, hemos ampliado nuestra experiencia en el diseño de productos y nuestro alcance global. Para cada uno de nuestros productos,
+        nos centramos en cómo nuestros clientes se conectan e interactúan con el mundo digital. Mantenemos el diseño en el centro de todo lo que creamos, en cada equipo y en cada disciplina,
+        para crear experiencias verdaderamente únicas y significativas.
+        </p>
+      </div>
+    </div>
+    <div class="right-wrapper">
+      <div class="right-texts">
+        <p>
+        Con productos vendidos en casi todos los países del mundo, Logitech se ha convertido en una empresa multimarca que diseña productos que unen a las personas a través de la música,
+        el gaming, el vídeo y la informática. Entre las marcas de la empresa están Logitech, Logitech G, ASTRO Gaming, Ultimate Ears, Jaybird, Blue Microphones y Streamlabs.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-wrapper">
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <img class="splide__slide" src="../../images/about/team1.jpg">
+          <img class="splide__slide" src="../../images/about/team2.jpg">
+          <img class="splide__slide" src="../../images/about/team3.jpg">
+          <img class="splide__slide" src="../../images/about/team4.jpg">
+        </ul>
+      </div>
+      <div class="splide__progress">
+        <div class="splide__progress__bar">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<script>
+	document.addEventListener( 'DOMContentLoaded', function () {
+
+		var splide = new Splide( '.splide', {
+        type  : 'loop',
+        rewind: true,
+        padding: {
+          right: '6rem',
+          left : '6rem',
+        }
+      } )
+
+    splide.mount();
+	});
+</script>
+

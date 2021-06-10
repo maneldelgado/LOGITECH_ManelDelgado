@@ -1,0 +1,16 @@
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+  
+.right-wrapper {
+  
+  .right-texts {
+    float: right;
+    width: 60%;
+    background-color: var(--lime);
+  }
+  p {
+      padding: 10% 10%;
+  }
+}
