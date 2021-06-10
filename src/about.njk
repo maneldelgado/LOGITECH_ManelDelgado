@@ -56,15 +56,21 @@ title: Sobre nosotros
 
 <script>
 	document.addEventListener( 'DOMContentLoaded', function () {
-
 		var splide = new Splide( '.splide', {
         type  : 'loop',
         rewind: true,
+        autoplay: true,
+        interval: 6000,
+        pauseOnHover: true,
+        pauseOnFocus: false,
+        resetProgress: false,
+        speed: 700,
         padding: {
-          right: '6rem',
-          left : '6rem',
-        }
-      } )
+          left : '20%',
+        },
+        height: "40%",
+        autoWidth:true
+      })
 
     splide.mount();
 	});
