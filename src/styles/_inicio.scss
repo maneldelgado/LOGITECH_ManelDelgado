@@ -18,16 +18,20 @@ body {
 
 .image-container {
     position: absolute;
-    width: 50%;
+    width: 35%;
     top: -10%;
     left: -15%;
-    min-width: 550px;
+}
+
+#selected-image {
+    min-width: 500px;
 }
 
 .article-description {
     font-size: var(--base-text);
-    padding: 10%;
-    width: 60%;
+    padding: 5%;
+    width: 65%;
+    min-height: 400px;
     float: right;
 }
 
@@ -68,6 +72,10 @@ body {
 .article-subtitle {
     font-size: var(--button);
     font-weight: var(--light);
+}
+
+.price {
+    font-size: var(--title);
 }
 
 /*GALERIA IMÁGENES RATÓN*/
