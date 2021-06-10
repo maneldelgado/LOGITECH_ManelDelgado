@@ -1,0 +1,41 @@
+footer {
+    background-color: #404040;
+    color: white;
+}
+  
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 1% 1.5% 1%
+}
+  
+.footer-links {
+    display: flex;
+    padding-bottom: 1%;
+}
+  
+  ul {
+        column-count: 4;
+        list-style-type: none;
+        font-weight: bold;
+    
+        li {
+        padding-right: 2.5em;
+        }
+    }
+  
+.media-container {
+    float: left;
+    width: 30%;
+}
+  
+.footer-copyright {
+    float: right;
+    padding-right: 2%;
+    color: gray;
+}
+  
+.media-icon {
+    width: 10%;
+}
+  

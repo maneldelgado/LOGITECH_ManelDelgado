@@ -2,6 +2,39 @@
 layout: layouts/base.njk
 title: Logitech
 ---
+<script>
+    function changeImage(element) {
+    document.getElementById("selected-image").src = element.src; 
+    }
+</script>
 
-<h1>Inicio</h1>
+<div class="article-wrapper">
 
+    <div class="galeria image-selector">
+      <img class="mouse-select" src="../../images/m720/m720-1.png" onclick="changeImage(this);">
+      <img class="mouse-select" src="../../images/m720/m720-3.png" onclick="changeImage(this);">
+      <img class="mouse-select" src="../../images/m720/m720-4.png" onclick="changeImage(this);">
+      <img class="mouse-select" src="../../images/m720/m720-5.png" onclick="changeImage(this);">
+    </div>
+
+    <div class="pastilla-color">
+        
+        <div class="image-container">
+            <img id="selected-image" src="../../images/m720/m720-1.png">
+        </div>
+        
+        <p class="article-description">
+        Triunfa en un mundo multidispositivo con M720 Triathlon Mouse.<br>Pasarás fácilmente de una tarea a otra alternando entre tres ordenadores, y recorrerás rápidamente documentos y páginas Web gracias al desplazamiento superrápido.<br>Con eficiencia mejorada, este ratón Bluetooth® y Unifying dura hasta 24 meses con una sola pila AA.<br>Todo eso con un tamaño normal y una forma cómodamente adaptable a la mano.
+        </p>
+        <p class="price">39,99€</p>
+        
+        <div class="article-inferior">
+            <p class="article-title">M720 TRIATHLON</p>
+            <button class="buy-button">Añadir al carro</button>
+        </div>
+
+    </div>
+
+</div>
+
+{% include "./specs.njk" %}

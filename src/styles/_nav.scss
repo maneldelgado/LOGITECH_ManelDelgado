@@ -1,0 +1,49 @@
+.menu{
+    height: 60px;
+    width: 100%;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: var(--bold);
+    font-size: var(--button);
+    padding-right: 10px;
+}
+
+.menu a:hover {
+    color: var(--lime);
+}
+
+.logitech-logo {
+    height: 40px;
+}
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--white);
+    color: var(--white);
+}
+
+#language {
+    font-family: var(--raleway);
+    font-weight: var(--bold);
+    font-size: var(--button);
+    color: var(--white);
+    background-color: transparent;
+    border: 0px;
+}
+
+#language option {
+    color: var(--grey);
+}
+
+.search-icon {
+    height: 20px;
+}
