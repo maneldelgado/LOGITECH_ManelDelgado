@@ -23,6 +23,7 @@
 .logitech-logo, .logitech-logo-mini, 
 .hamburguer-menu {
     height: 40px;
+    min-width: 40px;
 }
 
 .logitech-logo-mini {
@@ -95,3 +96,6 @@ input[type=text] {
         align-self: flex-start;
     }
 }
+
+
+
