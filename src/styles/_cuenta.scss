@@ -1,39 +1,130 @@
 .left-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    background-color: var(--darkgrey);
-    padding: 3%;
-    margin: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: var(--darkgrey);
+  padding: 3% 10% 3% 3%;
+  margin: 50px 0 50px 0;
 }
 
 .left-specs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .left-pictos {
-    width: 15%;
-    margin: auto 30px auto 0;
+  width: 15%;
+  margin: auto 30px auto 0;
 }
 
 .left-texts {
-    color: var(--white);
-    width: 85%;
+  color: var(--white);
+  width: 85%;
 }
 
 /* PARTE DERECHA */
 
 .right-wrapper {
-    width: 55%;
-    background-color: var(--lime);
-    display: flex;
-    right: 0;
-    top: 200px;
-    position: absolute;
+  width: 55%;
+  background-color: var(--lime);
+  display: flex;
+  right: 0;
+  top: 200px;
+  position: absolute;
+  font-family: var(--raleway);
 }
 
 .top-picto {
-    width: 50px;
+  width: 50px;
+}
+
+/*Login*/
+
+#cuenta-logi {
+  text-align: center;
+  font-weight: var(--bold);
+  font-size: 18px;
+}
+
+.login-form {
+  min-height: 10rem;
+  margin: auto;
+  max-width: 50%;
+  padding: 5%;
+}
+
+.login-text {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.login-username,
+.login-password {
+  color: var(--black);
+  background: transparent;
+  border: 0 solid;
+  border-bottom: 1px solid rgba(black, 8);
+  display: block;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: calc(100% - 3rem);
+}
+
+.login-forgot-pass {
+  color: var(--black);
+  cursor: pointer;
+  display: block;
+  font-size: 70%;
+  opacity: 0.8;
+  margin: 1rem;
+  text-decoration: underline;
+}
+.login-submit {
+  border: 0;
+  background: var(--black);
+  color: white;
+  display: block;
+  margin: 1.5rem auto;
+  padding: 1rem 2rem;
+  font-size: 105%;
+}
+
+.login-new {
+  color: var(--black);
+  display: block;
+  font-size: 85%;
+  text-align: center;
+}
+
+a.login-new {
+  text-decoration: underline;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.pass {
+  display: flex;
+}
+
+.login-password-icon {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  width: calc(33% - 1rem);
+}
+
+@media (min-width: 691px) {
+    .login-mobile, .specs-description-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 690px) {
+    .left-wrapper, .right-wrapper {
+        display: none;
+    }
 }

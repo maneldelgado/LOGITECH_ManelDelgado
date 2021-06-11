@@ -41,7 +41,53 @@ h1 {
     margin-right: 30px;
 }
 
-.specs-description {
+.specs-description, .specs-description-mobile {
     width: 100%;
     font-size: var(--button);
+}
+
+.black {
+    color: var(--black);
+}
+
+@media (max-width: 925px) {
+
+    .specs-titles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .specs-wrapper {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: var(--lateral);
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .specs-block {
+        width: 80%;
+        margin: 20px 0 40px 0;
+    }
+
+    .specs-description {
+        text-align: center;
+    }
+
+    .specs-titles img {
+        width: 130px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .specs-wrapper {
+        padding: 5%;
+    }
 }

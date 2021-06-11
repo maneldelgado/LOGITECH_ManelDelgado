@@ -40,7 +40,40 @@ ul {
 }
   
 .media-icon {
+    min-width: 30px;
     width: 8%;
     margin-right: 20px;
+}
+
+@media (max-width: 590px) {
+    ul {
+        column-count: 2;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+    }
+
+    .footer-media {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .media-container {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+    }
+
 }
   

@@ -95,3 +95,159 @@ body {
 .mouse-select {
     cursor: pointer;
 }
+
+@media (max-width: 1100px) {
+    #selected-image {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 925px) {
+    #selected-image {
+        min-width: 400px;
+    }
+
+    .galeria img {
+        width: 100px;
+    }
+
+    .article-inferior {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        flex-wrap: wrap;
+        width: 60%;
+        bottom: -60px;
+        left: -150px;
+    }
+}
+
+@media (max-width: 780px) {
+    .article-description {
+        display: none;
+    }
+
+    .pastilla-color {
+        height: 500px;
+    }
+
+    .article-inferior {
+        margin: auto;
+        position: relative;
+        bottom: -330px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        display: none;
+    }
+
+    .image-container {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #selected-image {
+        min-width: 500px;
+    }
+
+    .pastilla-color {
+        width: 80%;
+    }
+
+    .article-wrapper {
+        padding-top: 10%;
+    }
+    
+}
+
+@media (max-width: 540px) {
+    .image-container {
+        position: absolute;
+        left: -80px;
+    }
+}
+
+@media (max-width: 520px) {
+    #selected-image {
+        min-width: 450px;
+    }
+
+    .image-container {
+        width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    #selected-image {
+        min-width: 320px;
+    }
+
+    .image-container {
+        left: -20px;
+        top: 8%;
+    }
+
+    .article-inferior {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        flex-wrap: wrap;
+        width: 60%;
+        bottom: -30px;
+        left: 0;
+    }
+}
+
+@media (max-width: 421px) {
+    .image-container {
+        top: 2%;
+    }
+
+    .article-inferior {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        flex-wrap: wrap;
+        width: 60%;
+        bottom: -30px;
+        left: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    #selected-image {
+        min-width: 250px;
+    }
+
+    .image-container {
+        left: -20px;
+        top: 8%;
+        width: 300px;
+    }
+
+    .article-inferior {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        flex-wrap: wrap;
+        width: 60%;
+        bottom: -30px;
+        left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .image-container {
+        width: 250px;
+    }
+
+    .pastilla-color {
+        height: 400px;
+    }
+
+    .article-wrapper {
+        min-height: 80vh;
+    }
+}

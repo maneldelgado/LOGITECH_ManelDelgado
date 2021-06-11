@@ -6,6 +6,9 @@ title: Cuenta
     document.getElementById("cuenta").style.color = "#d7ff82"
 </script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+
 <div class="left-wrapper">
     <div class="left-specs">
         <div class="left-pictos">
@@ -54,12 +57,45 @@ title: Cuenta
 
 <div class="right-wrapper">
 
-    <div class="top-picto">
-        <img src="../../images/pictogramas/user.svg" alt="User">
-        <p class="form-title">Cuenta Logitech</p>
-    </div>
     <div>
-        <input type="text">
-    </div>
+      <form class="login-form">
+        <p class="login-text">
+          <span>
+            <img src="../../images/pictogramas/user.svg" alt="User">
+            <div id="cuenta-logi">Cuenta Logitech</div>
+          </span>
+        <input type="email" class="login-username" autofocus="true" required="true" placeholder="Usuario" />
+        <div class="pass">
+          <input type="password" class="login-password" required="true" placeholder="Password" />
+          <i class="bi bi-eye-slash login-password-icon" id="togglePassword"></i>
+        </div>
+<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+        <a class="login-forgot-pass">Recuperar contraseña</a>
 
+        <input type="submit" name="Login" value="Iniciar Sesion" class="login-submit" />
+        <div class="login-new">No tienes cuenta?</div>
+        <a class="login-new">Crear cuenta?</a>
+      </form>
+    </div>
 </div>
+
+    <div class="login-mobile">
+      <form class="login-form">
+        <p class="login-text">
+          <span>
+            <img src="../../images/pictogramas/user.svg" alt="User">
+            <div id="cuenta-logi">Cuenta Logitech</div>
+          </span>
+        <input type="email" class="login-username" autofocus="true" required="true" placeholder="Usuario" />
+        <div class="pass">
+          <input type="password" class="login-password" required="true" placeholder="Password" />
+          <i class="bi bi-eye-slash login-password-icon" id="togglePassword"></i>
+        </div>
+<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+        <a class="login-forgot-pass">Recuperar contraseña</a>
+
+        <input type="submit" name="Login" value="Iniciar Sesion" class="login-submit" />
+        <div class="login-new">No tienes cuenta?</div>
+        <a class="login-new">Crear cuenta?</a>
+      </form>
+    </div>

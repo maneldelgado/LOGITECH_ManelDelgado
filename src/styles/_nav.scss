@@ -20,8 +20,13 @@
     color: var(--lime);
 }
 
-.logitech-logo {
+.logitech-logo, .logitech-logo-mini, 
+.hamburguer-menu {
     height: 40px;
+}
+
+.logitech-logo-mini {
+    margin-left: -40px;
 }
 
 input[type=text] {
@@ -50,4 +55,43 @@ input[type=text] {
 
 .search-icon {
     height: 20px;
+}
+
+@media (min-width: 861px) {
+    .logitech-logo-mini, .hamburguer-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .logitech-logo {
+        display: none;
+    }
+}
+
+@media (min-width: 781px) {
+    .hamburguer-menu {
+        display: none;
+    }
+
+    .logitech-logo-mini {
+        margin: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .navigation, .search-icon, #searcher,
+    #language {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .hamburguer-menu {
+        align-self: flex-start;
+    }
 }
